@@ -1,5 +1,7 @@
 # Share VirtualBox VMs
 
+The following will walk you through setting up a VirtualBox VM that can be shared across multiple users.
+
 1. Put the virtual machine in a location that everyone will have access to: /Users/Shared/ is a good place to start.
 2. Configure the virtual machine
 3. Open a terminal:
@@ -34,11 +36,11 @@
         <plist version="1.0">
         <dict>
         <key>Label</key>
-        <string>com.company.virtualboxpermissionsfix</string>
+        <string>edu.yourname.virtualboxpermissionsfix</string>
         <key>ProgramArguments</key>
         <array>
         <string>sh</string>
-        <string>/Library/Scripts/VirtualBox/virtualbox_permissions_fix.sh</string>
+        <string>/Library/Scripts/YourScripts/virtualbox_permissions_fix.sh</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
