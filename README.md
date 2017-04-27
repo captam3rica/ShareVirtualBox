@@ -49,4 +49,11 @@ The following will walk you through setting up a VirtualBox VM that can be share
         </dict>
         </plist>
 
+    This particular script will check for a permissions change every 10 seconds, but this can be modified as needed.
+
+6. To start the LaunchDaemon immediately use the following command. Otherwise, the daemon will start after the next reboot of host computer.
+
+        $ sudo launchctl load /Locaton/of/LaunchDaemon/name.of.LaunchDaemon
+        $ sudo launchctl start name.of.LaunchDaemon
+
 Thanks in part to [Derflounder](https://derflounder.wordpress.com/2011/10/26/configuring-a-virtualbox-vm-to-be-shared-by-multiple-users-on-the-same-mac/)
